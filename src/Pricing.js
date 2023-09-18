@@ -16,12 +16,14 @@ import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
 
+
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        FireSafe
+        StopFire
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -47,11 +49,11 @@ const tiers = [
     subheader: 'Most popular',
     price: '250',
     description: [
-      '5 to 30 foot boundary inspection',
-      'Defensible space inspection',
-      '30 to 100 foot boundry inspection',
-      'roof, attic, and gutter inspection',
-      'Written Report and Insurance lowering Certification',
+      '•5 to 30 foot boundary inspection',
+      '•Defensible space inspection',
+      '•30 to 100 foot boundry inspection',
+      '•roof, attic, and gutter inspection',
+      '•Written Report and Insurance lowering Certification',
     ],
     buttonText: 'Get started',
     buttonVariant: 'contained',
@@ -95,143 +97,134 @@ const footers = [
   },
 ];
 
+const theme = createTheme({
+  pallette: {
+    background: {
+      transparent: "transparent"
+    }
+  }
+})
+
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
 export default function Pricing() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
+      <div class="backdrop" >
       <AppBar
         position="static"
         color="default"
         elevation={0}
         sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
       >
-        <Toolbar sx={{ flexWrap: 'wrap' }}>
-          <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            FireSafe
+        
+        <Toolbar sx={{ flexWrap: 'wrap', bgcolor:"rgba(0,0,0,0)"}}>
+          <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1}}>
+            StopFireUSA
           </Typography>
           <nav>
             <Link
               variant="button"
+              underline="none"
               color="text.primary"
               href="#"
               sx={{ my: 1, mx: 1.5 }}
             >
-              Features
+              Home
             </Link>
             <Link
               variant="button"
+              underline="none"
               color="text.primary"
               href="#"
               sx={{ my: 1, mx: 1.5 }}
             >
-              Enterprise
+              About Us
             </Link>
             <Link
               variant="button"
+              underline="none"
               color="text.primary"
               href="#"
               sx={{ my: 1, mx: 1.5 }}
             >
-              Support
+              Services
+            </Link>
+            <Link
+              variant="button"
+              underline="none"
+              color="text.primary"
+              href="#"
+              sx={{ my: 1, mx: 1.5 }}
+            >
+              Become a Partner
             </Link>
           </nav>
-          <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
+          {/* <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
             Login
-          </Button>
+          </Button> */}
         </Toolbar>
       </AppBar>
+
+      
       {/* Hero unit */}
-      <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
-        <Typography
+      <div class="container">
+        <h1
           component="h1"
           variant="h2"
           align="center"
-          color="text.primary"
+          
+          color="white"
           gutterBottom
         >
           Schedule an Appointment
-        </Typography>
-        <Typography variant="h5" align="center" color="text.secondary" component="p">
-          Protect your Home, family, and your legacy with Firesafe. The world leader in fire saftey home inspections and hardening.
-        </Typography>
-      </Container>
+        </h1>
+        <h2 align="center" color="white">
+          Protect your Home, family, and your legacy with Firesafe
+        </h2>
+      </div>
       {/* End hero unit */}
 
-      {/* Product Box */}
-      <Container maxWidth="md" component="main" alignItems="center">
-            
-              <Card
-              maxWidth="100px"
-              >
-                <CardHeader
-                  title={tiers[0].title}
-                  subheader={tiers[0].subheader}
-                  titleTypographyProps={{ align: 'center' }}
-                  action={tiers[0].title === 'Pro' ? <StarIcon /> : null}
-                  subheaderTypographyProps={{
-                    align: 'center',
-                  }}
-                  sx={{
-                    backgroundColor: (theme) =>
-                      theme.palette.mode === 'light'
-                        ? theme.palette.grey[200]
-                        : theme.palette.grey[700],
-                  }}
-                />
-                <CardContent>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      mb: 2,
-                      
-                    }}
-                  >
-                    <Typography component="h2" variant="h3" color="text.primary" align="center" position="relative">
-                      ${tiers[0].price}
-                    </Typography>
-                    <Typography variant="h20" color="text.secondary" position="relative">
-                      
-                    </Typography>
-                  </Box>
-                  <ul style={{
-                        backgroundColor:"whitesmoke",
-                        borderRadius: "10px",
-                        width: "50%",
-                        margin:"auto",
-                      }}>
-                    
-                    {tiers[0].description.map((line) => (
-                      <Typography
-                        
-                        
-                        
-                        component="li"
-                        variant="subtitle1"
-                        align="center"
-                        display="block"
-                        key={line}
-                      >
-                        {console.log(line)}
-                        {/* {console.log(tiers.description)} */}
-                        {line}
-                      </Typography>
-                    ))}
-                  </ul>
-                </CardContent>
-                <CardActions>
-                  <Button fullWidth variant={tiers[0].buttonVariant}>
-                    {tiers[0].buttonText}
-                  </Button>
-                </CardActions>
-              </Card>
-      </Container>
+  
+        <Box sx={{
+            margin: "auto",
+            alignItems: "center",
+            width:"45%", 
+            padding:"10px"
+        }}>
+        <input type="text" id="ip2" placeholder="address" textAlign="center"/>
+        <button type="button">Contact</button>
+        </Box>
+        </div>
+        <div class="underpageinfo">
+          <img class="infoimg" src="https://www.cityofalbany.net/images/stories/fire/wildfire/firedefensible-web.jpg"/>
+          <div class="infotextcontainer" style={{textAlign:"center"}}>
+          <h2 class="infotext">Defensible Space</h2>
+          <p class="infotext">Small changes to your home can reduce wildfire risk by up to 40%, and structural and vegetation improvements 
+          combined can lower wildfire risk by up to 75%. Furthermore, losses prevented can be much bigger (e.g. 5 times greater) 
+          when compared to a highly flammable environment. <br/><br/>Our team of experts can conduct a risk assessment to ensure your property is 
+          held at the highest standard from CALFire and the NFPA.</p>
+          </div>
+        </div>
+        <div class="underpageinfo">
+          
+          <div class="infotextcontainer" style={{textAlign:"center"}}>
+          <h2 class="infotext">Insurance Coverage</h2>
+          <p class="infotext">Is your home located in an area where insurance companies are refusing to cover or have increased 
+          your rates significantly? Our team can prepare a comprehensive report about how wildfire-resistant your property is. 
+          If we identify areas on your property that can be made safer, we will also let you know that and after performing those services, 
+          we can revise our report and provide you a digital copy to share with your agent, broker or insurance company.
+          </p>
+          </div>
+          <img class="infoimg" src='https://media.istockphoto.com/id/1053025324/photo/construction-concept-foreman-officer-inspector-defect-about-engineer-architect-work-home.jpg?s=612x612&w=0&k=20&c=GFNr9IEffcpz2-iip2Ox9czEYFplPy_dSmPOqL4An9w='/>
+        </div>
+        
 
+      {/* Product Box */}
+      
 
       {/* Footer */}
       <Container
@@ -263,6 +256,7 @@ export default function Pricing() {
         </Grid>
         <Copyright sx={{ mt: 5 }} />
       </Container>
+    
       {/* End footer */}
     </ThemeProvider>
   );
