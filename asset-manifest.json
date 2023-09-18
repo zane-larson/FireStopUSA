@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/FireHard/static/css/main.254e4bb9.css",
-    "main.js": "/FireHard/static/js/main.f0d16273.js",
-    "index.html": "/FireHard/index.html",
-    "main.254e4bb9.css.map": "/FireHard/static/css/main.254e4bb9.css.map",
-    "main.f0d16273.js.map": "/FireHard/static/js/main.f0d16273.js.map"
+    "main.css": "/FireStopUSA/static/css/main.254e4bb9.css",
+    "main.js": "/FireStopUSA/static/js/main.f0d16273.js",
+    "index.html": "/FireStopUSA/index.html",
+    "main.254e4bb9.css.map": "/FireStopUSA/static/css/main.254e4bb9.css.map",
+    "main.f0d16273.js.map": "/FireStopUSA/static/js/main.f0d16273.js.map"
   },
   "entrypoints": [
     "static/css/main.254e4bb9.css",
