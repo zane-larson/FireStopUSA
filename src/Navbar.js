@@ -18,7 +18,7 @@ function Navbar() {
           </li>
           
           <li><a href="/aboutus">About Us</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
         <h1 className="logo">StopFireUSA</h1>
       </div>
