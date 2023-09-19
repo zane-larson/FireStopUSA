@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Rockwell;
+    src: url(https://kinsta.com/blog/web-safe-fonts/#27-rockwell);
+  
+  }
+
+.services.container-main{
+    margin: auto;
+}
+.services{
+    color:white;
+    
+    font-family: Rockwell;
+}
+.services.title{
+    margin:auto;
+    text-align: center;
+    display: block;
+    color: rgb(153, 51, 51);
+    font-size: 3rem;
+    padding-top: 1rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.852);
+
+}
+hr{
+    width:25rem;
+    margin:auto;
+}
+
+.primary-container{
+    background-image: linear-gradient(
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.3)),
+    url('https://smmtc.org/plantpix/2009/coyote_brush2.jpg');
+    background-size: cover;
+    background-position: top 100px;
+    display:flex;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border: solid black 5px
+}
+
+.secondary-container{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left:2vw;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.852);
+    
+}
+
+.container-title{
+    
+    margin-left: 2rem;
+}
+
+.container-button-price{
+    
+    margin-top: 1rem;
+    margin-left: 2rem;
+    
+}
+
+
+.sellpoint{
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.services.booknow{
+    width: 7rem;
+    height: 2rem;
+    margin-top: .5rem;
+    background-color: rgb(153, 51, 51);
+    border-radius: 0px;
+    border-color:rgb(153, 51, 51) ;
+    box-shadow: 1px 1px 5px 2px black;
+} 
+
+.motto-title{
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    margin-left: 30px;
+    margin-right:4vw;
+    display: inline-flex;
+    max-width: 20vw;
+}
+
+.motto{
+    margin-left:30px;
+    margin-right:4vw;
+
+}
+
+.primary-info-container{
+    padding-left: 10vh;
+    padding-right:10vh;
+
+}
+
+.info-title{
+    padding-top: 3vh;
+    color: rgb(153, 51, 51);
+    text-shadow: 1px 1px 3px rgb(216, 216, 216);
+    padding-bottom: 3vh;
+    text-align: center;
+}
+
+h2.infoheader{
+    color:rgb(0, 0, 0);
+    text-shadow: none;
+    font-weight: 300;
+    font-size: 0rem;
+    text-decoration: underline;
+
+}
+p.infoheader{
+    color:rgb(41, 41, 41);
+    text-shadow: none;
+    margin-bottom: 20px;
+    
+}
+
+.infoheader{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 15%;
+    margin-right:15%;
+}

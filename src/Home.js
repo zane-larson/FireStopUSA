@@ -15,8 +15,8 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import Container from '@mui/material/Container';
-
-
+import "./styles/index.css"
+import { Link as LinkR } from 'react-router-dom';
 
 function Copyright(props) {
   return (
@@ -108,13 +108,13 @@ const theme = createTheme({
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
 
-export default function Pricing() {
+export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <div class="backdrop" >
-      <AppBar
+      {/* <AppBar
         position="static"
         color="default"
         elevation={0}
@@ -163,11 +163,9 @@ export default function Pricing() {
               Become a Partner
             </Link>
           </nav>
-          {/* <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-            Login
-          </Button> */}
+
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
 
       
       {/* Hero unit */}
@@ -176,13 +174,13 @@ export default function Pricing() {
           component="h1"
           variant="h2"
           align="center"
-          
+          class="pheader"
           color="white"
           gutterBottom
         >
           Schedule an Appointment
         </h1>
-        <h2 align="center" color="white">
+        <h2 align="center" color="white" class="subheader">
           Protect your Home, family, and your legacy with Firesafe
         </h2>
       </div>
@@ -196,7 +194,10 @@ export default function Pricing() {
             padding:"10px"
         }}>
         <input type="text" id="ip2" placeholder="address" textAlign="center"/>
-        <button type="button">Contact</button>
+        <p class="home-or">or</p>
+        <LinkR to="/contact" style={{textDecoration:"none"}}>
+        <button type="button" class="home-button">Contact</button>
+        </LinkR>
         </Box>
         </div>
         <div class="underpageinfo">

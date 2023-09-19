@@ -26,7 +26,7 @@ code {
   background-image: linear-gradient(
     rgba(0,0,0,0.3),
     rgba(0,0,0,0.3)),
-    url("https://survey1inc.com/wp-content/uploads/2020/12/Nice-house.jpg") ;
+    url('https://www.housedigest.com/img/gallery/one-easy-but-crucial-way-to-fireproof-your-home/l-intro-1660165004.jpg') ;
   background-size: cover;
   height: 100vh;
   opacity: .95;
@@ -34,7 +34,7 @@ code {
 
   
 }
-h1 {
+.pheader {
   color:white;
   text-shadow: 4px 4px 5px black;
   font-family: Rockwell;
@@ -73,27 +73,27 @@ input::placeholder {
   height: 1000px;
 }
 
-button {
+.home-button {
   margin:auto;
   padding-top: 7px;
   padding-bottom: 7px;
   text-decoration: none;
   text-align: center;
-  border-color: rgb(33, 32, 57);
+  border-color: rgb(153, 51, 51);
   width: 45%;
   display:block;
-  margin-top: 15px;
+  margin-top: 7px;
   border-radius: 10px;
   font-size: 1.5rem;
   box-sizing: content-box;
-  background-color: rgb(33, 32, 57);
+  background-color: rgb(153, 51, 51);
   color:white;
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   box-shadow: 3px 3px 5px black;
   text-shadow: 3px 3px 2px black;
 }
         
-h2 {
+.subheader {
   color:white;
   text-shadow: 3px 3px 2px black;
   font-family: Rockwell;
@@ -137,4 +137,12 @@ h2.infotext{
 .infotextcontainer {
   margin:auto;
   display: inline;
+}
+
+.home-or{
+  color:white;
+  text-align: center;
+  font-family: Rockwell;
+  font-size:1.3rem;
+  padding-top: 7px;
 }
