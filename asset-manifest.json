@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/FireStopUSA/static/css/main.163ed631.css",
-    "main.js": "/FireStopUSA/static/js/main.260dc077.js",
+    "main.js": "/FireStopUSA/static/js/main.3d111677.js",
     "index.html": "/FireStopUSA/index.html",
     "main.163ed631.css.map": "/FireStopUSA/static/css/main.163ed631.css.map",
-    "main.260dc077.js.map": "/FireStopUSA/static/js/main.260dc077.js.map"
+    "main.3d111677.js.map": "/FireStopUSA/static/js/main.3d111677.js.map"
   },
   "entrypoints": [
     "static/css/main.163ed631.css",
-    "static/js/main.260dc077.js"
+    "static/js/main.3d111677.js"
   ]
 }
