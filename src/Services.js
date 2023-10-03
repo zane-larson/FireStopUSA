@@ -91,7 +91,7 @@ function Services() {
                 <div className='services secondary-container'>
                     <h1 class="services container-title">FireStop Estimate and Report</h1>
                     <div class="services container-button-price">
-                        <p>$250</p>
+                        <p className='price'>$250</p>
                         <LinkR to="/contact">
                         <button class="services booknow">Book Now</button>
                         </LinkR>

@@ -54,9 +54,9 @@
     background-color: #ea5541;
     width: 80%;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 0;
     padding-right: 0px;
-    padding-bottom: 15px;
+    padding-bottom: 0;
     padding-left: 0px;
     margin-top: 0px;
     margin-right: 0px;
@@ -140,6 +140,9 @@
     padding-bottom: 20px;
     padding-left: 20px;
     background-color: #f1f1f1;
+    vertical-align: top;
+    display: flex;
+    margin-top:0px
   }
   
   .new_home_web .input {
@@ -455,5 +458,35 @@
   }
 
   .responsive-container-block.container{
-    padding-top:8vh;
+    padding-top:2vh;
+  }
+
+  .book-appointment-header{
+    color:#ea5541
+  }
+
+  .send-button{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    background-color: #ea5541;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  p.contact.book-appointment-header{
+    color:#3b3b3b
   }

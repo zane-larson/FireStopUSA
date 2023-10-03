@@ -2,6 +2,7 @@ import Navbar from "./Navbar"
 import ContactForm from "./contact";
 import Home from "./Home"
 import React from "react";
+import Servicemap from "./Servicemap";
 import Services from "./Services"
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
@@ -14,8 +15,10 @@ function App() {
           
           <Route path="/contact" element={<ContactForm/>}/>
           <Route path="/services" element={<Services/>}/>
+          <Route path="/servicemap" element={<Servicemap/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="*" element={<Home/>}/>
+          
           
         </Routes>
     </div>
