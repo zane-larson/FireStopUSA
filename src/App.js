@@ -5,7 +5,8 @@ import React from "react";
 import Servicemap from "./Servicemap";
 import Services from "./Services"
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-
+import Footer from "./Footer"
+import Aboutus from "./Aboutus";
 function App() {
   return (
     <Router>
@@ -16,11 +17,13 @@ function App() {
           <Route path="/contact" element={<ContactForm/>}/>
           <Route path="/services" element={<Services/>}/>
           <Route path="/servicemap" element={<Servicemap/>}/>
+          <Route path="/aboutus" element={<Aboutus/>}/>
           <Route path="/" element={<Home/>}/>
           <Route path="*" element={<Home/>}/>
           
           
         </Routes>
+      <Footer/>
     </div>
     </Router>
   );

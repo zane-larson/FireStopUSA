@@ -6,7 +6,9 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container nav-container">
         <input type="checkbox" name="" id="" />
-        <a href="/home"><h1 className="logo">StopFireUSA</h1></a>
+        <a href="/home"><h1 className="logo">StopFireUSA</h1>
+        <img alt="logo" className="logo"src="/favicon.png"/>
+        </a>
         <div className='list-container'>
         <ul className="menu-items">
           <div> <li><a href="/Home">Home</a></li></div>

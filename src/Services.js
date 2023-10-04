@@ -1,88 +1,9 @@
 import React from 'react';
 import "./styles/services.css"
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import GlobalStyles from '@mui/material/GlobalStyles';
-import Container from '@mui/material/Container';
 import {Link as LinkR} from "react-router-dom"
-const footers = [
-    {
-      title: 'Company',
-      description: ['Team', 'History', 'Contact us', 'Locations'],
-    },
-    {
-      title: 'Features',
-      description: [
-        'Cool stuff',
-        'Random feature',
-        'Team feature',
-        'Developer stuff',
-        'Another one',
-      ],
-    },
-    {
-      title: 'Resources',
-      description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
-    },
-    {
-      title: 'Legal',
-      description: ['Privacy policy', 'Terms of use'],
-    },
-  ];
-  function Copyright(props) {
-    return (
-      <Typography variant="body2" color="text.secondary" align="center" {...props}>
-        {'Copyright © '}
-        <Link color="inherit" href="https://mui.com/">
-          StopFire
-        </Link>{' '}
-        {new Date().getFullYear()}
-        {'.'}
-      </Typography>
-    );
-  }
-
 
 function Services() {
 
-    // Services data
-    const servicesData = [
-        {
-            title: 'Service 1',
-            description: 'Description of Service 1.',
-            benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3'],
-            imageUrl: 'service1-image.jpg',
-            link: '/service1',
-        },
-        {
-            title: 'Service 2',
-            description: 'Description of Service 2.',
-            benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3'],
-            imageUrl: 'service2-image.jpg',
-            link: '/service2',
-        },
-        // Add more services as needed
-    ];
-
-    // Create an array of service elements
-    const serviceElements = servicesData.map((service, index) => (
-        <div key={index} className="service">
-            <img src={service.imageUrl} alt={service.title} />
-            <h2>{service.title}</h2>
-            <p>{service.description}</p>
-            <ul>
-                {service.benefits.map((benefit, index) => (
-                    <li key={index}>{benefit}</li>
-                ))}
-            </ul>
-            <a href={service.link}>Learn More</a>
-        </div>
-    ));
-
-    // Return the Services page container
     return (
         <div className="services main-container">
             <h1 className='services title'>Our Services</h1>
@@ -168,36 +89,6 @@ function Services() {
                     <p class="infoheader">•Offer of ongoing maintenance and follow-up services to ensure the property remains safe from wildfire risks.</p>
                 </div>
             </div>
-            <Container  
-        maxWidth="md"
-        component="footer"
-        sx={{
-          borderTop: (theme) => `1px solid ${theme.palette.divider}`,
-          mt: 8,
-          py: [3, 6],
-        }}
-      >
-        <Grid container spacing={4} justifyContent="space-evenly">
-          {footers.map((footer) => (
-            <Grid item xs={6} sm={3} key={footer.title}>
-              <Typography variant="h6" color="text.primary" gutterBottom>
-                {footer.title}
-              </Typography>
-              <ul>
-                {footer.description.map((item) => (
-                  <li key={item}>
-                    <Link href="#" variant="subtitle1" color="text.secondary">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Grid>
-          ))}
-        </Grid>
-        <Copyright sx={{ mt: 5 }} />
-      </Container>
-
         </div>
 
     );

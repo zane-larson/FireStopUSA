@@ -92,7 +92,7 @@ function ContactForm() {
                   </div>
                   
                   <div className="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-2">
-                    <input onChange={handleInputChange} className="textinput" id="i5vyy-2" name="AdditionalNotes" placeholder="Additional Notes" value={formData.AdditionalNotes}></input>
+                    <input onChange={handleInputChange} className="textinput" id="i5vyy-2" name="AdditionalNotes" placeholder="Message" value={formData.AdditionalNotes}></input>
                   </div>
                 </div>
                 <button type="submit"></button>

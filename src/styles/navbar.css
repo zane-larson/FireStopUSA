@@ -130,8 +130,25 @@ padding: 7px
     align-items: center;
     border: none;
 }
+img.logo{
+    display: none;
+}
 
-/* .menu-items div:hover{
-    background-color: #444;
-    color:white;
-} */
+@media (max-width:850px){
+    .menu-items li{
+        font-size: 1rem;
+        margin: 1rem;
+    }
+}
+@media (max-width:730px){
+    h1.logo{
+        display: none;
+    }
+    .list-container{
+        width: 100%;
+    }
+    img.logo{
+        display: block;
+        height: 60px;
+    }
+}

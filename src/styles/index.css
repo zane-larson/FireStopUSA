@@ -3,6 +3,7 @@
   margin:0;
 
 }
+
 body {
   margin: 0;
   font-family: Rockwell, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -73,7 +74,14 @@ input::placeholder {
   height: 1000px;
 }
 
-.home-button {
+.multibox{
+    margin: auto;
+    align-items: center;
+    width: 50%;
+    padding: 10px;
+}
+
+button.home-button {
   margin:auto;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -91,6 +99,12 @@ input::placeholder {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   box-shadow: 3px 3px 5px black;
   text-shadow: 3px 3px 2px black;
+}
+.home-button{
+  text-decoration:none;
+  width:45%;
+  margin: auto;
+  display: flex;
 }
         
 .subheader {
@@ -175,4 +189,43 @@ background-size: cover;
 .servicemap-container img{
   height: 100%;
   width:100%;
+}
+
+@media (max-width:800px) {
+    .home-button{
+      width: 100%;
+    }
+    .multibox{
+      width:75%;
+    }
+    .infoimg{
+      display: none;
+    }
+    h2.infotext{
+      margin: none;
+      margin-right: auto;
+      align-self: left;
+      padding-left: 5px;
+      margin-left:0px;
+      width:100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+    .infotextcontainer{
+      margin-left: 0px;
+      margin-right:0px;
+      width:100%;
+      display: block;
+      text-align: left;
+      align-items: left;
+      justify-content: left;
+    }
+    p.infotext{
+      width:100%;
+      display: flexbox;
+      max-width: 100%;
+    }
+    .underpageinfo{
+      align-items: left;
+    }
 }

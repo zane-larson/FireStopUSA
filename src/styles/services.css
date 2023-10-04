@@ -133,3 +133,27 @@ p.infoheader{
 .price{
     font-size: 1.4rem
 }
+
+@media (max-width:1200px){
+    .third-half-container{
+        display: none;
+    }
+    .motto{
+        display:none
+    }
+}
+
+@media (max-width:800px){
+    .primary-info-container{
+        padding-left: 20px;
+        padding-right:20px;
+    }
+    p.infoheader{
+        margin-left: 5%;
+        margin-right:5%;
+    }
+    .primary-container{
+        margin-left: 5%;
+        margin-right:5%
+    }
+}

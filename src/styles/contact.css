@@ -3,7 +3,13 @@
     color: #939393;
     max-width: 630px;
   }
-  
+  .new_home_web{ 
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)),
+      url("../../public/contact-background.webp");
+    background-size: cover;
+  }
   .new_home_web .text-blk.heading {
     font-size: 36px;
     line-height: 55px;
