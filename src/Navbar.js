@@ -1,6 +1,18 @@
-import React from 'react';
+
 import './styles/navbar.css'
+import MenuIcon from '@mui/icons-material/Menu';
+import IconButton from '@mui/material/IconButton';
+import React, { useState } from 'react';
+
 function Navbar() {
+  
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [isDrodownopen, setDropdownopen] = useState(false);
+    const handleMenuClick = () => {
+      setMenuOpen(!menuOpen);
+      setDropdownopen(!isDrodownopen);
+
+    };
   return (
     <div className='complete-nav-container'>
     <nav className="navbar">
@@ -26,10 +38,36 @@ function Navbar() {
           <li><a href="/servicemap">Service Map</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
-        </div>
         
+        </div>
+        <label htmlFor='menu-checkbox' className='menu-icon' onClick={handleMenuClick}>
+            &#9776; {/* Unicode for "hamburger" icon */}
+          </label>
+          
+          
       </div>
     </nav>
+    <div className={`dropdown-container ${isDrodownopen ? 'open' : ''}`}>
+            {menuOpen ? (
+              <ul className='dropdown-items'>
+                <li>
+                  <a href='/home'>Home</a>
+                </li>
+                <li className='dropdown'>
+                  <a href='/services'>Services</a>
+                </li>
+                <li>
+                  <a href='/aboutus'>About Us</a>
+                </li>
+                <li>
+                  <a href='/servicemap'>Service Map</a>
+                </li>
+                <li>
+                  <a href='/contact'>Contact</a>
+                </li>
+              </ul>
+            ) : null}
+          </div>
     </div>
   );
 }

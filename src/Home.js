@@ -70,7 +70,7 @@ const [availability, setAvailibility] = useState("Or")
           Schedule an Appointment
         </h1>
         <h2 align="center" color="white" className="subheader">
-          Protect your Home, family, and your legacy with Firesafe
+          Protect your Home, Family, and Your Legacy with StopFireUSA
         </h2>
         <p className='above-address'>Check availability</p>
       </div>

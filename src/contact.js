@@ -3,6 +3,7 @@ import "./styles/contact.css"
 import {useState} from 'react'
 function ContactForm() {
 
+  const [isMessageVisible, setMessageVisible] = useState(false);
   const [formData, setFormData] = useState({
     Name: '',
     Address: '',
@@ -21,8 +22,15 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-      console.log("WE DID IT")
-      console.log(formData)
+    // Display the message popup
+    setMessageVisible(true);
+
+    // Automatically hide the popup after 2 seconds
+    setTimeout(() => {
+      setMessageVisible(false);
+    }, 2000);
+      // console.log("WE DID IT")
+      // console.log(formData)
     fetch('https://stopfireusa-6d7576dfc8c6.herokuapp.com/email', {
       method: 'POST',
       body: JSON.stringify(formData),
@@ -32,7 +40,7 @@ function ContactForm() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('Response from backend:', data);
+        // console.log('Response from backend:', data);
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -49,6 +57,14 @@ function ContactForm() {
   return (
     
     <div className="new_home_web">
+      {/* <div className='message-popup'>
+        {isMessageVisible ? (
+                  <div className='popup-box'>
+                  <img src="check.png" />
+                  </div>
+        ) : null}
+
+      </div> */}
       <div className="responsive-container-block big-container">
         {/* <img className="imgBG"   /> */}
         <div className="responsive-container-block textContainer">
@@ -78,16 +94,16 @@ function ContactForm() {
                 <div className="responsive-container-block">
                   <div className="left4">
                     <div className="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-2">
-                      <input onChange={handleInputChange} className="input" id="ijowk-2" name="Name" placeholder="Name"value={formData.Name} />
+                      <input required onChange={handleInputChange} className="input" id="ijowk-2" name="Name" placeholder="Name"value={formData.Name} />
                     </div>
                     <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                      <input onChange={handleInputChange} className="input" id="indfi-2" name="Address" placeholder="Address" value={formData.Address} />
+                      <input required  onChange={handleInputChange} className="input" id="indfi-2" name="Address" placeholder="Address" value={formData.Address} />
                     </div>
                     <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                      <input onChange={handleInputChange} className="input" id="ipmgh-2" name="Email" placeholder="Email Address" value={formData.Email} />
+                      <input required onChange={handleInputChange} className="input" id="ipmgh-2" name="Email" placeholder="Email Address" value={formData.Email} />
                     </div>
                     <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 lastPhone">
-                      <input onChange={handleInputChange} className="input" id="imgis-2" name="PhoneNumber" placeholder="Phone Number" value={formData.PhoneNumber} />
+                      <input required onChange={handleInputChange} className="input" id="imgis-2" name="PhoneNumber" placeholder="Phone Number" value={formData.PhoneNumber} />
                     </div>
                   </div>
                   

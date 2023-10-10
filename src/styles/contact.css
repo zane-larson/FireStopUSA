@@ -304,6 +304,24 @@
     bottom: 0px;
   }
   
+.popup-box{
+  position: absolute;
+  width: 50vh;
+  height: 50vh;
+  top:40%;
+  left:40%;
+  z-index: 100;
+
+  
+}
+.popup-box img{
+  max-height: 40vh;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+
+
   @media (max-width: 1024px) {
     .new_home_web .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {
       margin-top: 60px;

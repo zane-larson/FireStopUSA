@@ -37,8 +37,9 @@ hr{
     display:flex;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 10vw;
+    
+    margin-right: 10vw;
     border: solid black 5px
 }
 
@@ -98,7 +99,7 @@ hr{
 .primary-info-container{
     padding-left: 10vh;
     padding-right:10vh;
-
+    padding-top:75px;
 }
 
 .info-title{
@@ -113,15 +114,16 @@ h2.infoheader{
     color:rgb(0, 0, 0);
     text-shadow: none;
     font-weight: 300;
-    font-size: 0rem;
-    text-decoration: underline;
+    font-size: 1.2rem;
+    margin-left: 0px;
 
 }
 p.infoheader{
     color:rgb(41, 41, 41);
     text-shadow: none;
     margin-bottom: 20px;
-    
+    margin-left: 0px;
+    margin-right: 0px
 }
 
 .infoheader{
@@ -132,6 +134,55 @@ p.infoheader{
 
 .price{
     font-size: 1.4rem
+}
+
+.icon-grid{
+    display: grid;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px
+}
+.icon-grid img{
+    display: flex;
+    margin:auto;
+    width: 10vw;
+    max-width: 150px;
+}
+.primary-icon-container h1{
+    color: rgb(58, 58, 58);
+    font-size: 2.4rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.primary-icon-container{
+    padding-bottom: 75px;
+}
+.icon-container h3{
+    color:rgb(58, 58, 58);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right:20px;
+    padding-left:20px;
+}
+.icon-container p{
+    color:rgb(58, 58, 58);
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom: 10px;
+}
+hr{
+    width:80%;
+}
+
+.infogrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px
+}
+.infosubgrid img{
+    max-width: 100%;
+    
 }
 
 @media (max-width:1200px){
@@ -156,4 +207,26 @@ p.infoheader{
         margin-left: 5%;
         margin-right:5%
     }
+    .infogrid{
+        display: inline;
+    }
+    .icon-grid{
+        display: inline;
+    }
+}
+
+.dropdown-container{
+    position: absolute;
+    top: 64px;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+}
+.dropdown-items{
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    margin: 0px;
 }

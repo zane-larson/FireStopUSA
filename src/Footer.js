@@ -97,12 +97,12 @@ export default function Footer(){
                 </li>
                 <li key="ITEM">
                   <Link href="https://www.fire.ca.gov/" variant="subtitle1" color="text.secondary">
-                    Fire Saftey information
+                    Fire Safety information
                   </Link>
                 </li>
                 <li key="ITEM">
                   <Link href="/contact" variant="subtitle1" color="text.secondary">
-                    Comaplints
+                    Complaints
                   </Link>
                 </li>
               

@@ -16,33 +16,7 @@
 width: 100vw;
 z-index: 100;
 }
-.dropdown-text{
-    display:grid;
-    font-family: Rockwell;
-padding: 7px
-}
-.dropdown-text:hover{
-    background-color: #444;
-    color:#fff;
-}
-.dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 2px 5px 2px black;
-    
 
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
-  }
-  
-  /* Style the dropdown link */
-  .dropdown:hover .dropdown-content {
-    display: grid; /* Show the dropdown content on hover */
-  }
-
-  
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
@@ -141,14 +115,77 @@ img.logo{
     }
 }
 @media (max-width:730px){
-    h1.logo{
+    /* h1.logo{
         display: none;
-    }
+    } */
     .list-container{
         width: 100%;
     }
-    img.logo{
+    /* img.logo{
         display: block;
         height: 60px;
+    } */
+}
+
+.menu-icon{
+    display: none;
+}
+@media (max-width: 700px) {
+    .menu-checkbox {
+      display: none;
+    }
+  
+    .menu-icon {
+        display:block;
+      cursor: pointer;
+      font-size: 40px;
+      padding: 10px;
+    }
+  
+    .menu-items {
+      display: none;
+    }
+  }
+  .dropdown-container{
+    position: absolute;
+    max-height: 0;
+    top: 64px;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    list-style-type: none;
+    overflow: hidden;
+    transition: max-height .3s ease-out;
+    
+}
+.dropdown-container.open{
+    max-height:500px;
+}
+.dropdown-items{
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    margin: 0px;
+}
+.dropdown-items li a{
+    color:white;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+}
+.dropdown-items li{
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;;
+}
+.dropdown-items li a:hover{
+    color: #00b9f1;
+    transition: color 0.3s ease-in-out;
+}
+
+@media (min-width:700px){
+    .dropdown-container{
+        display:none;
     }
 }

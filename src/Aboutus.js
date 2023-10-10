@@ -13,8 +13,8 @@ function Aboutus() {
         </div>
         <div className="home-right">
           <h2 className="home-heading">Father and Son Buissness</h2>
-          <p className="home-para">Father and Son owned and ran buisness, It has been our
-          life dream together to run a buisness side by side. As lifelong California residents we've seen wildfires tear through
+          <p className="home-para">Father and Son owned and ran business, It has been our
+          life dream together to run a business side by side. As lifelong California residents, we've seen wildfires tear through
           communities and even threaten our home.  </p>
           {/* <a href="" className="btn">Our Mission</a> */}
         </div>
@@ -22,10 +22,10 @@ function Aboutus() {
       <section id="workFlow">
         <h2 className="heading">Our Game Plan</h2>
         <p className="para">We have hired a standout team of fire experts <br />
-        Partnered with local contracting and landscaping buisness to deliver the best service
-        <br /> and we are commited to serve you to the best of our ability </p>
+        Partnered with local contracting and landscaping business to deliver the best service
+        <br /> We are commited to serve customers with first class service </p>
         <div className="num-container">
-          <div className="num-item"><span>Small buisness <br />Support</span></div>
+          <div className="num-item"><span>Small business <br />Support</span></div>
           <div className="num-item"><span>Serving <br />North County San Diego</span></div>
           <div className="num-item"><span>Working With <br />The Community</span></div>
         </div>
@@ -33,7 +33,7 @@ function Aboutus() {
       <section id="goal">
         <div className="goal-left">
           <h2>Our Goal</h2>
-          <p>Or Mission is to save homes, lives, and memories. Resident of California are at an ever present risk of wildfires, 
+          <p>Our Mission is to save homes, lives, and memories. Residents of California are at an ever present risk of wildfires, 
             threatening their homes and communities. We want to help protect these homes by creating an accesable outlet to fire harden your home. </p>
           <ul>
             <li>Complete home risk evaluation and comprehensive report</li>
@@ -47,7 +47,7 @@ function Aboutus() {
         </div>
       </section>
       <section id="our-Team">
-        <h2>Our Members</h2>
+        <h2>Our Team</h2>
         <div className="teamContainer">
           <div className="team-item">
             <img src="./teamMember.png" alt="" />
