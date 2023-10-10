@@ -9,7 +9,7 @@ function Aboutus() {
       </header>
       <section id="home">
         <div className="home-left">
-          <img src="https://m.economictimes.com/thumb/msid-93814547,width-1200,height-900,resizemode-4,imgsize-141238/mohanlal-left.jpg" alt="Father and son" />
+          <img src="family.png" alt="Father and son" />
         </div>
         <div className="home-right">
           <h2 className="home-heading">Father and Son Buissness</h2>
@@ -34,7 +34,7 @@ function Aboutus() {
         <div className="goal-left">
           <h2>Our Goal</h2>
           <p>Our Mission is to save homes, lives, and memories. Residents of California are at an ever present risk of wildfires, 
-            threatening their homes and communities. We want to help protect these homes by creating an accesable outlet to fire harden your home. </p>
+            threatening their homes and communities. We want to help protect these homes by creating an accessible outlet to fire harden your home. </p>
           <ul>
             <li>Complete home risk evaluation and comprehensive report</li>
             <li>Lower insurance rates through stopfire and calfire home certifications</li>
